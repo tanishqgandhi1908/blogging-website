@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+
+/* Header Section */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#brand a {
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul a {
+    color: white;
+}
+
+header ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #1d1f1d;
+    z-index: 1;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    #brand {
+        margin-left: 35%;
+    }
+}
+
+
+/*End header */
+
+.section-heading {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+
+/* Landing page */
+
+.landing-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.landing-background {
+    /* position: absolute; */
+    width: 100%;
+    animation: animate 40s linear infinite;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        background-image: url(images/health.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    20% {
+        background-image: url(images/education.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    40% {
+        background-image: url(images/industry.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    60% {
+        background-image: url(images/science.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    80% {
+        background-image: url(images/tourism.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.landing-info {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 900;
+    color: white;
+    width: 50%;
+    margin-top: 9%;
+    margin-left: 20%;
+}
+
+.landing-info-describe {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 700px) {
+    .landing-info {
+        font-size: 35px;
+        font-weight: 800;
+        width: 80%;
+    }
+    .landing-info-describe {
+        width: 70%;
+        margin: 20%;
+        font-weight: 600;
+        text-align: justify;
+        font-size: 25px;
+    }
+    .landing-background {
+        filter: grayscale(50%);
+    }
+    .section-heading {
+        margin: 10%;
+    }
+}
+
+
+/* End Landing page */
+
+
+/* Blog page */
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-container a {
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+}
+
+.card-container {
+    margin: 15%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 200px;
+    /* background-color: pink; */
+}
+
+.card-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    border: 3px solid black;
+    width: 25%;
+    margin-left: 0%;
+    height: 200px;
+    background-color: #1d1f1d;
+}
+
+.card-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 3px solid black;
+    width: 75%;
+    margin-left: 0%;
+    height: 200px;
+    background-color: black;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .blog-container {
+        flex-direction: column;
+    }
+    .card-container {
+        margin: 0%;
+        margin-bottom: 10%;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* background-color: pink; */
+    }
+    .card-left {
+        flex-direction: column;
+        width: 75%;
+        margin: 0%;
+        background-color: #1d1f1d;
+    }
+    .card-right {
+        margin: 0%;
+        height: 150px;
+        background-color: #1d1f1d;
+        font-size: 20px;
+    }
+}
+
+
+/* End blog page */
