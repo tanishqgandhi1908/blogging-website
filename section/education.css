@@ -234,22 +234,19 @@ ul li:hover {
 }
 
 .blog-container a {
-    width: inherit;
-    height: inherit;
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 45%;
     text-decoration: none;
 }
 
 .card-container {
-    margin-left: 12%;
-    /* margin-bottom: 2%; */
-    /* margin-top: 5%; */
     padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    height: 200px;
+    height: 150px;  
     /* background-color: pink; */
 }
 
@@ -261,7 +258,7 @@ ul li:hover {
     border: 3px solid black;
     width: 25%;
     margin-left: 0%;
-    height: 200px;
+    height: 150px;
     background-color: #1d1f1d;
 }
 
@@ -275,16 +272,21 @@ ul li:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     color: white;
     border: 3px solid black;
     width: 75%;
     margin-left: 0%;
-    height: 200px;
+    height: 150px;
     background-color: black;
     font-size: 25px;
 }
-
+.card-description{
+    margin: 5%;
+    font-size: 15px;
+    text-align: left;
+}
 @media screen and (max-width: 700px) {
     .blog-container {
         flex-direction: column;

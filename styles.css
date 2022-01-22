@@ -139,103 +139,6 @@ header ul li:hover {
   letter-spacing: 3px;
 }
 
-/* Landing page */
-
-.landing-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.landing-background {
-  /* position: absolute; */
-  width: 100%;
-  animation: animate 40s linear infinite;
-  background-size: cover;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    background-image: url(images/health.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  20% {
-    background-image: url(images/education.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  40% {
-    background-image: url(images/industry.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  60% {
-    background-image: url(images/science.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  80% {
-    background-image: url(images/tourism.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-
-.landing-info {
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 900;
-  color: white;
-  width: 50%;
-  margin-top: 9%;
-  margin-left: 20%;
-}
-
-.landing-info-describe {
-  font-size: 25px;
-  font-style: normal;
-  font-weight: normal;
-  color: white;
-  width: 50%;
-  margin-top: 2%;
-  margin-left: 20%;
-  margin-bottom: 5%;
-}
-
-@media screen and (max-width: 700px) {
-  .landing-info {
-    font-size: 35px;
-    font-weight: 800;
-    width: 80%;
-  }
-  .landing-info-describe {
-    width: 70%;
-    margin: 20%;
-    font-weight: 600;
-    text-align: justify;
-    font-size: 25px;
-  }
-  .landing-background {
-    filter: grayscale(50%);
-  }
-  .section-heading {
-    margin: 10%;
-  }
-}
-
-/* End Landing page */
 
 /* Blog page */
 
@@ -251,9 +154,9 @@ header ul li:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   width: 100%;
-  height: 750px;
+  height: 550px;
   background-color: gainsboro;
 }
 .projects-card :hover {
@@ -261,7 +164,7 @@ header ul li:hover {
 }
 .projects-card-list-image img {
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
 .project-card-list-title {
   font-size: 20px;
@@ -326,3 +229,5 @@ header ul li:hover {
 
 
 /* End blog page */
+
+

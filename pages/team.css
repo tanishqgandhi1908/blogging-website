@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-heading {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+/* Header Section */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#brand a {
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: white;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #1d1f1d;
+    z-index: 1;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    #brand {
+        margin-left: 35%;
+    }
+}
+
+
+/*End header */
+
+
+.team-card-container {
+    margin-top: 8%;
+    float: left;
+    width: 28%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin-left: 4%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .team-card-container {
+      width: auto;
+      display: block;
+      height: auto;
+    }
+  }
+  .team-container {
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: 250px;
+    margin-left: 5%;
+  }
+  .card-image img {
+    margin-left: 12%;
+    border-radius: 50%;
+  }
+  .team-container-inside {
+    padding: 0 90px;
+  }
+  
+  h2 {
+    margin-left: 20%;
+  }
+  .card-title {
+    color: grey;
+    margin-left: 20%;
+  }
