@@ -5,95 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" href="images/india.png">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <title>Data Journalism</title>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-
-    <header>
-        <div id="brand"><a href="./index.html">Blogs.com</a></div>
-        <nav>
-            <ul>
-                <li><a href="./pages/about.html">About Data-Journalism</a></li>
-                <li><a href="./pages/team.html">Team</a></li>
-
-            </ul>
-        </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="./pages/about.html">About Data-Journalism</a></li>
-                <li><a href="./pages/team.html">Team</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- End navigation bar -->
-
-
-    <!-- Blogs page -->
-    <section id="blogs">
-        <!-- <div class="section-heading">Blogs</div> -->
-
-        <div class="projects-card">
-            <div class="projects-card-list">
-                <div class="projects-card-list-image"><img src="images/education.jpg"></div>
-                <div class="project-card-list-title">Health and Education</div>
-                <div class="project-card-list-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    placeat quidem consectetur est voluptatem velit mollitia?</div>
-                <a href="./section/education.html">
-                    <div class="project-card-button"><button class="b5">LEARN MORE</button></div>
-                </a>
-            </div>
-            <div class="projects-card-list">
-                <div class="projects-card-list-image"><img src="images/health.jpg"></div>
-                <div class="project-card-list-title">Science and Technology</div>
-                <div class="project-card-list-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    placeat quidem consectetur est voluptatem velit mollitia?</div>
-                <div class="project-card-button"><button class="b5">LEARN MORE</button></div>
-            </div>
-            <div class="projects-card-list">
-                <div class="projects-card-list-image"><img src="images/industry.jpg"></div>
-                <div class="project-card-list-title">Tourism and Culture</div>
-                <div class="project-card-list-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    placeat quidem consectetur est voluptatem velit mollitia?</div>
-                <div class="project-card-button"><button class="b5">LEARN MORE</button></div>
-            </div>
-            <div class="projects-card-list">
-                <div class="projects-card-list-image"><img src="images/science.jpg"></div>
-                <div class="project-card-list-title">Industry and Infrastructure</div>
-                <div class="project-card-list-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    placeat quidem consectetur est voluptatem velit mollitia?</div>
-                <div class="project-card-button"><button class="b5">LEARN MORE</button></div>
-            </div>
-            <div class="projects-card-list">
-                <div class="projects-card-list-image"><img src="images/tourism.jpg"></div>
-                <div class="project-card-list-title">Miscellaneous</div>
-                <div class="project-card-list-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    placeat quidem consectetur est voluptatem velit mollitia?</div>
-                <div class="project-card-button"><button class="b5">LEARN MORE</button></div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
+    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/
+    https://bootswatch.com/litera/
+    https://htmlcolorcodes.com/ -->
     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/india.png" width="50" height="50">
+                Visuals of India
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html">About Data-Journalism</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/team.html">Team</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="projects-card">
+        <div class="card bg-secondary" style="width: 18rem;">
+            <img src="images/education.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Health and Education</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="./section/HealthAndEducation.html" class="btn btn-dark">Click Here</a>
+            </div>
+        </div>
+        <div class="card bg-light" style="width: 18rem;">
+            <img src="images/science.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Science and Technology</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="./section/HealthAndEducation.html" class="btn btn-dark">Click Here</a>
+            </div>
+        </div>
+        <div class="card bg-secondary" style="width: 18rem;">
+            <img src="images/tourism.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tourism and Culture</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="./section/HealthAndEducation.html" class="btn btn-dark">Click Here</a>
+            </div>
+        </div>
+        <div class="card bg-light" style="width: 18rem;">
+            <img src="images/industry.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Industry and Infrastructure</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="./section/HealthAndEducation.html" class="btn btn-dark">Click Here</a>
+            </div>
+        </div>
+        <div class="card bg-secondary" style="width: 18rem;">
+            <img src="images/health.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Miscellaneous</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="./section/HealthAndEducation.html" class="btn btn-dark">Click Here</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

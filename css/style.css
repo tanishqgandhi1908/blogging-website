@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card :hover{
+    background-color: #FF5C00;
+    /* background-color: #F48A2A; */
+
+    color: beige;
+
+}
+.card-img-top {
+  height: 200px;
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: row;
+}
+.card-title {
+  min-height: 53px;
+}
+.card-text {
+  min-height: 110px;
+}
+@media screen and (max-width: 800px) {
+  .card-title {
+    min-height: 103px;
+  }
+  .card-text {
+    min-height: 120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projects-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-title {
+    min-height: 53px;
+  }
+  .card-text {
+    min-height: 110px;
+  }
+}
