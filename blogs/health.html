@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/particles.js-master/particles.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="health.css">
+    <link rel="icon" href="../images/india.png">
+    <title>Healthcare System</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/india.png" width="50" height="50">
+                Visuals of India</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">About Data-Journalism</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/team.html">Team</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="Blog-container">
+        <h1 class="display-5 text-center">Healthcare System in India - An Overview Part 1</h1>
+        <div class="blog-date blockquote-footer text-center">October 18, 2021</div>
+        <div class="blog-intro">
+            <p>In this blog post I have attempted to present a basic overview of the healthcare system in India via some
+                charts (hover the pointer over different states in the map to see the details).
+                This post focuses on :</p>
+            <ol>
+                <li>Comparing important healthcare indicators of India with it's neighbors and developed countries.</li>
+                <li>Comparing health index scores and per capita public health expenditure of Indian states.</li>
+                <li>Giving an overview of public health centers in rural India.</li>
+                <li>Viewing the number of MBBS seats available in different states of India.</li>
+                <li>Understanding the disparity in stipends and salaries paid to interns and resident doctors wrt
+                    states.</li>
+            </ol>
+            <br>
+            <p><b>Some important points to note - </b></p>
+            <ol type="a">
+                <li>The data used for this post is pre-covid data ranging mostly between 2018-2019. The post will be
+                    updated with the latest post-covid data as soon as it is available from a reliable source.</li>
+                <li>The term 'doctors' in this post has been used for allopathic doctors only. Doctors under the purview
+                    of the AYUSH ministry (Ayurveda, Yoga & Naturopathy, Unani, Siddha and Homeopathy) have not been
+                    considered here.</li>
+                <li>A more detailed study will be done and posted as soon as possible which will include the development
+                    of healthcare sector in India over time, lack of facilities in public health centers, rural urban
+                    divide of healthcare indicators etc. among other things.</li>
+                <li>Since most of the data used is pre October 2019, the data for both Jammu Kashmir and Ladakh has been
+                    together attributed to the union territory of Jammu and Kashmir.
+                </li>
+
+            </ol>
+            <p>
+                <b>Data sources</b> - The data for the visualizations presented below has been taken from the Rural
+                Health
+                Statistics Report 2018-2019 by the Ministry of Health and Family Welfare, Health Index Report by NITI
+                Aayog published in June 2019, World Bank Open Data, WHO data and some newspaper articles. References to
+                some of these websites have been given in the references section.
+            </p>
+
+            <div class="map-PC">
+                <div class='tableauPlaceholder' id='viz1643602045419' style='position: relative'>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book4_16344108242200&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript' src="health1.js" onload="ComparingHealthcare()"></script>
+            </div>
+
+            <div class="map-mobile">
+                <div class='tableauPlaceholder' id='viz1643602859206' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name'
+                            value='HealthcarecomparisonofIndiawithitsneighborsanddevelopedcountries_Mobile&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+            </div>
+            <script type='text/javascript' src="health1.js" onload="ComparingHealthcareMobile()"></script>
+
+            <p>
+                <b>Points to note -</b>
+            </p>
+            <ol>
+                <li>The term PPP (purchasing power parity) is the measurement of prices in different countries that uses
+                    the prices of specific goods to compare the absolute purchasing power of the countries' currencies.
+                    Visit this link to know more about purchasing power parity.</li>
+
+            </ol>
+
+            <div class="map-PC">
+                <div class='tableauPlaceholder' id='viz1643602225372' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book2_16344051244670&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script type='text/javascript' src="health1.js" onload="ComparingHealthIndex()"></script>
+
+            </div>
+
+
+            <div class="map-mobile">
+                <div class='tableauPlaceholder' id='viz1643602986611' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Healthcare_index_mobileversion&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script type='text/javascript' src="health1.js" onload="ComparingHealthIndexMobile()"></script>
+
+            </div>
+            <br>
+            <p>
+                <b>Points to note -</b>
+            </p>
+            <ol>
+                <li>Even though some states have a better people:doctor ratio than the WHO recommended ratio of 1000
+                    people per one doctor, there is a large scale disparity in the number of doctors working in rural
+                    and urban areas. As a result a large scale shortage of doctors in the rural areas has been reported
+                    in almost every state.
+                </li>
+                <li>The latest data on Niti Aayog's health index scores will be updated as soon as it is released.
+                </li>
+            </ol>
+
+            <div class="map-PC">
+                <div class='tableauPlaceholder' id='viz1643602350385' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='My_book1&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script type='text/javascript' src="health1.js" onload="PublicHeathCare()"></script>
+
+            </div>
+
+            <div class="map-mobile">
+                <div class='tableauPlaceholder' id='viz1643602913094' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='PublichealthcarecentersIndia2018-2019_MobileVersion&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script type='text/javascript' src="health1.js" onload="PublicHeathCareMobile()"></script>
+
+            </div>
+
+            <br>
+            <p>
+                <b>Points to note -</b>
+            </p>
+            <ol>
+                <li>The rural healthcare infrastructure in India has been arranged into a three-tier system consisting
+                    of a Sub-Center, Primary Healthcare Center and Community Healthcare center.
+                </li>
+                <li>This system is based on the following norms - 1 sub-center per 5000 people in plain area and 3000
+                    people in tribal/hilly area, 1 primary healthcare center per 30,000 people in plain area and 20,000
+                    people in tribal/hilly area and community healthcare center per 1,20,000 people in plain area and
+                    80,000 people in tribal/hilly area.
+                </li>
+                <li>Refer to this article for more insight on these health centers and their requirements and functions.
+                </li>
+                <li>A more detailed visualization on the facilities in these centers will be done and added soon.</li>
+            </ol>
+
+
+            <div class="map-PC">
+                <div class='tableauPlaceholder' id='viz1643602411707' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Book3_16344072058950&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+                <script type='text/javascript' src="health1.js" onload="MbbsSeat()"></script>
+
+            </div>
+            <div class="map-mobile">
+                <div class='tableauPlaceholder' id='viz1643602954784' style='position: relative'><object
+                        class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='MBBSseatsinIndiaandinternshipstipend_MobileVersion&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object></div>
+            </div>
+            <script type='text/javascript' src="health1.js" onload="MbbsSeatMobile()"></script>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
