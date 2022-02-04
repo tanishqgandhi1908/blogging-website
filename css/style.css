@@ -8,12 +8,9 @@ nav ul li:hover {
   transition: 0.3s;
 }
 
-.card :hover{
-    background-color: #FF5C00;
-    /* background-color: #F48A2A; */
-
-    color: beige;
-
+.card :hover {
+  background-color: #f39158;
+  color: beige;
 }
 
 .card-img-top {
@@ -23,6 +20,7 @@ nav ul li:hover {
 .projects-card {
   display: flex;
   flex-direction: row;
+  margin: 5%;
 }
 .card-title {
   min-height: 53px;

@@ -1,49 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-/* health and Education page */
-
-body {
-  margin: 0;
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+
+}
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 body {
-  background: linear-gradient(90deg, #ff6219 0%, #74ee7e 100%)
+
+  box-sizing: border-box;
+  background: url("../images/cool-background.png");
+  /* background: url("../images/ocean.jpg"); */
+}
+.card{
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.596);
+border-radius: 15px;
+min-width: 740px;
+
 }
 
+.card-img {
+  min-height: 221px;
+  min-width: 195px;
+  /* width: 200px; */
+  border-radius: 15px; 
 
-.Blogs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* align-items: center; */
-}
-
-.col-md-4 img {
-  height: 221px;
-  width: 165px;
 }
 .Blogs-mobile {
   display: none;
 }
+
 @media screen and (max-width: 700px) {
   .Blogs {
     display: none;
   }
   .Blogs-mobile {
     display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    
   }
-  .card {
-    width: 300px;
-  }
-  .col-md-4 img {
-    height: 200px;
-    width: 300px;
+   .card {
+    min-width: 250px;
+    /* margin-left: 20%; */
   }
 }
 a{
