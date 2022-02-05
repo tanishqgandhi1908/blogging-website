@@ -10,9 +10,9 @@ nav ul li:hover {
 body {
   box-sizing: border-box;
   background-color: #1d1f1d;
-  /* background: url("../images/cool-background.png"); */
+  background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0.295)), url("../images/cool-background.png");
   color: white;
-  background: url("../images/ocean.jpg");
+  /* background: url("../images/ocean.jpg"); */
 }
 .about-section{
   position: absolute;
