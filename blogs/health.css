@@ -9,6 +9,9 @@ nav ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
+.heading{ 
+  text-align: left;
+}
 
 .Blog-container {
   margin: 5%;

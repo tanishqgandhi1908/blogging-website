@@ -10,19 +10,48 @@ nav ul li:hover {
 body {
   box-sizing: border-box;
   background-color: #1d1f1d;
-  background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0.295)), url("../images/cool-background.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.164), rgba(255, 255, 255, 0.295)), url("../images/cool-background.png");
+
   color: white;
-  /* background: url("../images/ocean.jpg"); */
+  /* background: url("../images/cool-background.png"); */
 }
 .about-section{
   position: absolute;
   /* top: 80px; */
   /* left: auto; */
 }
+.container{
+  text-align: left;
+}
 
-
-
+p{
+  background-color: black;
+  padding: 20px;
+  border-radius: 30px;
+}
 
 .jumbotron{
   width: 100%;
+}
+.mobile{
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .PC{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  p{
+    width: 90%;
+  margin-left: 5%;
+
+  }
+  h1{
+    margin-left: 10%;
+
+  }
+
 }

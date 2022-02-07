@@ -42,9 +42,9 @@ nav ul li:hover {
     align-items: center;
   }
   .card-title {
-    min-height: 53px;
+    min-height: 33px;
   }
   .card-text {
-    min-height: 110px;
+    min-height: 100px;
   }
 }
