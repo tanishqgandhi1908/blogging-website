@@ -35,7 +35,8 @@ body {
     display: none;
   }
   .container {
-    max-width: 250px;
+    margin-top:3%;
+    max-width: 290px;
   }
   .Blogs-mobile {
     display: flex;
@@ -44,7 +45,7 @@ body {
     overflow-x: hidden;
   }
   .card {
-    min-width: 250px;
+    min-width: 290px;
   }
   .card-img{
     border-radius: 25px;
