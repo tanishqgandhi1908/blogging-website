@@ -28,13 +28,15 @@ body {
   text-align: left;
 }
 
-p {
+
+.text-box{
   background-color: white;
+  text-align: center;
   color: black;
   padding: 20px;
   border-radius: 30px;
+  
 }
-
 .jumbotron {
   width: 100%;
 }
