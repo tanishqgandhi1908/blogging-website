@@ -2,7 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 1px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 30, 30);
+  border-radius: 1px;
+}
+
 nav ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
@@ -46,5 +61,23 @@ nav ul li:hover {
   }
   .card-text {
     min-height: 100px;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 0px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(31, 30, 30);
+    border-radius: 1px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
   }
 }
