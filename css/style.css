@@ -23,7 +23,7 @@ nav ul li:hover {
   transition: 0.3s;
 }
 
-.card :hover {
+.projects-card .card :hover {
   background-color: #f39158;
   color: beige;
 }
@@ -80,4 +80,16 @@ nav ul li:hover {
   ::-webkit-scrollbar-thumb:hover {
     background: black;
   }
+}
+
+.Articles-List{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 8%;
+  /* cursor: pointer; */
+}
+.Articles-List a{
+  text-decoration: none;
 }
