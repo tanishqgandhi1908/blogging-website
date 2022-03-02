@@ -19,7 +19,8 @@ body {
 }
 
 .card-img {
-  min-height: 190px;
+  /* min-height: 190px; */
+  height: 190px;
   min-width: 175px;
   /* width: 200px; */
   border-radius: 15px;
