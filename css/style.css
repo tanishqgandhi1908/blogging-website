@@ -43,6 +43,7 @@ nav ul li:hover {
 }
 .card-text {
   min-height: 110px;
+  text-align: left;
 }
 @media screen and (max-width: 800px) {
   .card-title {
