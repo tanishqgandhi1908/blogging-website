@@ -16,18 +16,11 @@ function EarlyMethodsMobile() {
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
 }
 function MPI() {
-    var divElement = document.getElementById('viz1643692912305');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    if (divElement.offsetWidth > 800) {
-        vizElement.style.minWidth = '400px';
-        vizElement.style.maxWidth = '600px';
-        vizElement.style.width = '100%';
-        vizElement.style.minHeight = '527px';
-        vizElement.style.maxHeight = '627px';
-        vizElement.style.height = (divElement.offsetWidth * 0.5) + 'px';
-    } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '400px'; vizElement.style.maxWidth = '600px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '527px'; vizElement.style.maxHeight = '627px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    var divElement = document.getElementById('viz1646923265553');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='600px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='600px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
    
 }
@@ -41,13 +34,14 @@ function MPIMobile() {
 }
 
 function Statewise() {
-
-    var divElement = document.getElementById('viz1646923265553');                    
+    var divElement = document.getElementById('viz1646981279285');                    
     var vizElement = divElement.getElementsByTagName('object')[0];                    
-    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='600px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='600px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='650px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='650px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='3577px';}                     
     var scriptElement = document.createElement('script');                    
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+
+    
     // var divElement = document.getElementById('viz1646394672382'); 
     // var vizElement = divElement.getElementsByTagName('object')[0]; 
     // if (divElement.offsetWidth > 800) { vizElement.style.width = '650px'; vizElement.style.height = '627px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '650px'; vizElement.style.height = '627px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '3577px'; } 

@@ -49,3 +49,6 @@ nav ul li:hover {
       margin-left: 0%;
     }
 }
+footer a{
+  text-decoration: none;
+}
