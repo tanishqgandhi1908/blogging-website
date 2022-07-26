@@ -52,3 +52,16 @@ nav ul li:hover {
 footer a{
   text-decoration: none;
 }
+
+.agri_images{
+  margin-left: 10%;
+  width: 70%;
+}
+.figure-caption{
+  margin-left: 30%;
+}
+@media screen and (max-width: 700px) {
+  .figure-caption{
+    margin-left: 0%;
+  }
+}
