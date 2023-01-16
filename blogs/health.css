@@ -109,5 +109,9 @@ thead{
   }
   table{
     margin-left: 0;
+    
+  }
+  td,th{
+    padding: 2px;
   }
 }
