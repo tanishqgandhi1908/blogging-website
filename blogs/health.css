@@ -58,11 +58,10 @@ footer a{
   width: 75%;
 }
 .figure-caption{
-  margin-left: 35%;
+  /* margin-left: 25%; */
+  text-align: center;
 }
-.test{
-  margin-left: 26%;
-}
+
 @media screen and (max-width: 700px) {
   .figure-caption{
     margin-left: 12%;
@@ -100,8 +99,9 @@ thead{
 }
 
 @media screen and (max-width: 700px) {
-  .figure-caption{
-    margin-left: 12%;
+  .test{
+    margin-left: 0;
+    text-align: center;
   }
   .industy_images{
     width: 100%;
